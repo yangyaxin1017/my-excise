@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="style2.css" rel="stylesheet" type="text/css">
+	<style>
+
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+    }
+    .swiper-container {
+        width: 800px;
+        height:400px;
+        margin: 20px auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        
+        /* Center slide text vertically */
+        /*display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;*/
+    }
+    </style>
+</head>
+<body>
+<div id="Layer1" style="position:absolute;
+     width:100%;height:100%;z-index:-1">
+     <img src="wu.jpg" 
+     height="100%" width="100%"/>
+     </div>
+	<div class="top">
+		<div class="inner">
+			<div class="top-left">欢迎登陆</div>
+			<div class="top-right">退出</div>
+		</div>
+	</div>
+
+	<div class="logo">
+		<div class="imgbox">
+			<img src="" alt="">
+		</div>
+		<div class="inputbox">
+			<input type="text">
+		</div>
+	</div>
+
+	<div class="nav">
+		<div class="nav-list">
+		<a href="">1</a>
+		</div>
+		<div class="nav-list">
+		<a href="">2</a>
+		</div>
+		<div class="nav-list">
+		<a href="">3</a>
+		</div>
+		<div class="nav-list">
+		<a href="">4</a>
+		</div>
+		<div class="nav-list">
+		<a href="">5</a>
+		</div>
+	</div>
+
+	<div class="banner">
+		<div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">Slide 10</div>
+        </div>
+    </div>
+	</div>
+
+	<div class="content">
+		<div class="item"></div>
+		<div class="item"></div>
+		<div class="item"></div>
+		<div class="item"></div>
+	</div> 
+
+	<div class="content1">
+	 	 	<div class="item1"></div>
+	 	 	<div class="item1"></div>
+	 	 	<div class="item1"></div>
+	 	 	<div class="item1"></div>
+	 </div>
+	 <div class="totop">
+	 	<a href="#">顶部</a>
+	 </div>
+	 <div class="demo1"></div> 	 
+	 <audio src="aa.mp3" controls autoplay="true"></audio>
+	 <video src="aa.mp4" controls></video>
+</body>
+<!-- Swiper JS-->
+    <script src="swiper1.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+     var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+    </script>
+</html>
